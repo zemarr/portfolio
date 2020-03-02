@@ -5,112 +5,474 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href='css/bootstrap/bootstrap.min.css'>
     <link rel="stylesheet" href='css/font-awesome/css/fontawesome.min.css'>
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,500i,700,900&display=swap"
+    <link rel="stylesheet" href='css/bootstrap/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
         rel="stylesheet">
-        
     <link rel="stylesheet" href='css/style.css'>
+    <script src="https://use.fontawesome.com/685cf8fb40.js"></script>
+
     <title>Portfolio</title>
 </head>
 
 <body>
-    <div class="#">
-        <!-- <p>Copyright &copy; Chukwudalu</p> -->
-    </div>
-    <div id="Home" class="container-fluid wrapper">
-        <div class='hero'>
-            <div class="overlay">
-                <nav>
-                    <span href="#" class="logo">LOGO</span>
-                    <div id="sidebar">
-                        <div class="toggle" onclick="toggleSidebar()">
-                            <div id="toggleline">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+    <div class="container-fluid no-mp unlocked primary-color">
+        <nav class='fixed-nav'>
+            <div class='navig primary-color'>
+                <a href="#" class="logo">
+                    <p>zemar<span>.</span></p>
+                </a>
+
+                <ul class="navlinks">
+                    <li>
+                        <a href="#Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#About">About</a>
+                    </li>
+                    <li>
+                        <a href="#Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#Mywork">My Work</a>
+                    </li>
+                    <li>
+                        <a href="#Contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="toggle-btn" onclick="toggleSidebar">
+                    <i id='toggleline' class="fa fa-apple" aria-hidden='true'></i>
+                </div>
+            </div>
+
+            <div id="sidebar">
+                <ul class="vertical-navlinks">
+                    <li>
+                        <a href="#Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#About">About</a>
+                    </li>
+                    <li>
+                        <a href="#Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#Mywork">My Work</a>
+                    </li>
+                    <li>
+                        <a href="#Contact">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="social-links">
+                    <li>
+                        <a href="#" target="_blank"><i class="fa fa-github gh" aria-hidden='true'></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <section id='Home' class="container-fluid no-mp unlocked section-padding">
+            <div class="container">
+                <div class="container-2">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-7">
+                            <ul class='socialnetworks'>
+                                <li class='primary-color'><a href='#' traget='_blank'><i class="fa fa-github"
+                                            aria-hidden='true'></i></a>
+                                </li>
+                                <li class='primary-color'><a href='#' traget='_blank'><i class="fa fa-linkedin"
+                                            aria-hidden='true'></i></a>
+                                </li>
+                                <li class='primary-color'><a href='#' traget='_blank'><i class="fa fa-github"
+                                            aria-hidden='true'></i></a>
+                                </li>
+                            </ul>
+                            <!-- <h1>I am Chukwudalu Ayika</h1> -->
+                            <div class="about-me">
+                                <p>I'm Dalu, a noob web developer with a long time of experience in this
+                                    field</p>
                             </div>
-                            <p>MENU</p>
+                            <ul class="link-portfolio">
+                                <li>
+                                    <a href="#">My Portfolio</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div id="close" onclick="closeSidebar()">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#Home">Home</a>
-                            </li>
-                            <li>
-                                <a href="#About">About Me</a>
-                            </li>
-                            <li>
-                                <a href="#Portolio">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="#Works">Works</a>
-                            </li>
-                            <li>
-                                <a href="#Contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <section>
-                    <h2>AYIKA, Chukwudalu</h2>
-                    <p>Web Developer</p>
-                </section>
-            </div>
-        </div>
-
-        <div id="About" class="about">
-            <h2 class="mainheading">About</h2 c>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 profile">
-                        <div class="profileimage">
-                            <div class="overlay"></div>
-                        </div>
-                        <section class="info">
-                            <p>Chukwudalu, Ayika</p>
-                            <p>Web Developer.</p>
-                        </section>
-                    </div>
-                    <div class="col-md-8 aboutme">
-                        <p>I am a developer with a strong desire to utilize existing knowledge as well as to grow in
-                            my
-                            overall tech capacity.
-                        </p>
-                        <p>Fueled by a passion for understanding patterns,
-                            I worked as a <span>designer</span> where I learned and acquired basic to intermediate
-                            skills in design,
-                            all of which have helped my transition to Coding.
-                        </p>
-                        <p>I am ready to collaborate in teams regarding technical designs, specifications and
-                            overall
-                            support.</p>
-                        <p>Here are some of <a href="work.html" class="links">my work</a>.</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="portfolio">
+        <section id="About" class="container-fluid no-mp unlocked section-padding alt-primary-color">
             <div class="container">
+                <div class="row justify-center">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <h2>About Me</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                standard dummy text.</p>
+                            <div class="underline secondary-color"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <ul class="nav nav-pills nav-justified">
-                            <li class="active"><a href="#">1st Link</a></li>
-                            <li><a href="#">2nd Link</a></li>
-                            <li><a href="#">3rd Link</a></li>
-                            <li><a href="#">4th Link</a></li>
-                        </ul>
+                    <div class="col-lg-5">
+                        <div class=""></div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="about-info">
+                            <h3>Hi There</h3>
+                            <div class="aboutme-description">
+                                <p>In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus
+                                    fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies
+                                    eros, ac porta sem turpis</p>
+                                <p>nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis porta sem
+                                    turpis quis leo. Nulla in feugiat elit</p>
+                            </div>
+                            <div class="row contact-info">
+                                <div class="col-lg-6">
+                                    <strong>Name:</strong>
+                                    <p>Chukwudalu Ayika</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <strong>Email:</strong>
+                                    <p>chukwudaluay@gmail.com</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <strong>Phone:</strong>
+                                    <p>+234(0)815 773 1698 </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <strong>LinkedIn:</strong>
+                                    <p>Chukwudalu_</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Services" class="container-fluid no-mp unlocked section-padding primary-color">
+            <div class="container">
+                <div class="row justify-center">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <span class="section-name">SERVICES</span>
+                            <h2>My Services</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                standard dummy text.</p>
+                            <div class="underline secondary-color"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item-service">
+                            <div class="item-service-icon">
+                                <i class="fa fa-github"></i>
+                            </div>
+                            <div class="item-service-content">
+                                <h5>Web Development</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item-service">
+                            <div class="item-service-icon"></div>
+                            <div class="item-service-content">
+                                <h5>Video Editing</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item-service">
+                            <div class="item-service-icon"></div>
+                            <div class="item-service-content">
+                                <h5>Web-app Development</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Mywork" class="container-fluid no-mp unlocked section-padding alt-primary-color">
+            <div class="container">
+                <div class="row justify-center">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <span class="section-name">MY WORK</span>
+                            <h2>My Work</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                standard dummy text.</p>
+                            <div class="underline secondary-color"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-center">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="work-item mb-50">
+                            <div class="work-thumb">
+                                <a href="#">
+                                    <img src="img\Desktop5K-3.png" alt='The first project I ever worked on'>
+                                </a>
+                            </div>
+                            <div class="work-content primary-color">
+                                <div class="work-meta">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <p>By <a href='index.html'>admin</a></p>
+                                        </li>
+                                    </ul>
+                                    <h3>Project title</h3>
+                                    <a href="#">Read more
+                                        <i class="fa fa-arrow-circle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="work-item mb-50">
+                            <div class="work-thumb">
+                                <a href="#">
+                                    <img src="img\Desktop5K-3.png" alt='The first project I ever worked on'>
+                                </a>
+                            </div>
+                            <div class="work-content primary-color">
+                                <div class="work-meta">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <p>By <a href='index.html'>admin</a></p>
+                                        </li>
+                                    </ul>
+                                    <h3>Project title</h3>
+                                    <a href="#">Read more
+                                        <i class="fa fa-arrow-circle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="work-item mb-50">
+                            <div class="work-thumb">
+                                <a href="#">
+                                    <img src="img\Desktop5K-3.png" alt='The first project I ever worked on'>
+                                </a>
+                            </div>
+                            <div class="work-content primary-color">
+                                <div class="work-meta">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <p>By <a href='index.html'>admin</a></p>
+                                        </li>
+                                    </ul>
+                                    <h3>Project title</h3>
+                                    <a href="#">Read more
+                                        <i class="fa fa-arrow-circle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id='Contact' class='container-fluid no-mp unlocked section-padding primary-color'>
+            <div class="container">
+                <div class="row justify-center">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <span class="section-name">HAVE ANY QUERY OR INQUIRY</span>
+                            <h2>Contact Me</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                standard dummy text.</p>
+                            <div class="underline secondary-color"></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-        </div>
+            <div class="container">
+                <div class="row justify-center">
+                    <!-- Address Card -->
+                    <div class="col-lg-4">
+                        <div class="address">
+                            <a href="#" class="">
+                                <i class="fa fa-map-marker"></i>
+                                <span>Locate me</span>
+                                <p>Soluyi, Gbagada</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Call Card -->
+                    <div class="col-lg-4">
+                        <div class="address">
+                            <a href="#" class="">
+                                <i class="fa fa-phone"></i>
+                                <span>Give me a call</span>
+                                <p>Office: +234-81-5773-1698</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Email Card -->
+                    <div class="col-lg-4">
+                        <div class="address">
+                            <a href="#" class="">
+                                <i class="fa fa-envelope-o"></i>
+                                <span>Get in online</span>
+                                <p>chukwudaluay@gmail.com</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <form action="#" method='post'>
+                            <div class="contactform">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" name="your-name" aria-required="true" aria-invalid="false"
+                                            placeholder="Your Name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="email" name="email" aria-required="true" placeholder="Your Email">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" name="subject" aria-required="true"
+                                            placeholder="Your Subject">
+                                        <textarea name="textarea" aria-required="true"
+                                            placeholder="Your Message"></textarea>
+                                        <input type="submit" class="wpcf7-form-control wpcf7-submit">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="footer center-text container-fluid no-mp unlocked section-padding alt-primary-color">
+            <div class="container">
+                <div class="row justify-center">
+                    <div class="col-lg-9 col-sm-10 mb-4">
+                        <div class="mb-5">
+                            <a href="index.html" class="custom-logo-link" rel="home">
+                                <p>zemar<span>.</span></p>
+                            </a>
+                        </div>
+                        <p class="footer-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div class="footer-social">
+                            <ul class="list-inline justify-center">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fa fa-pinterest"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 </body>
+
 <script src="app.js"></script>
 
 </html>
+
+<!-- <nav>
+    <a href="#" class="logo">
+        <span class='fa fa-code'></span>
+    </a>
+    <div id="sidebar">
+        <div class="toggle" onclick="toggleSidebar()">
+            <div id="toggleline">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="close" onclick="closeSidebar()">
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li>
+                <a href="#Home">Home</a>
+            </li>
+            <li>
+                <a href="#About">About me</a>
+            </li>
+            <li>
+                <a href="#Projects">Projects</a>
+            </li>
+            <li>
+                <a href="#Contact">Contact</a>
+            </li>
+        </ul>
+        <div class="social-links">
+            <ul>
+                <li>
+                    <a href="#" target="_blank"><i class="fa fa-facebook-f fb"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/iamzemar" target="_blank"><i
+                            class="fa fa-twitter tw"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/iamzemar" target="_blank"><i
+                            class="fa fa-instagram ig"></i></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><i class="fa fa-github gh"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav> -->
+
+<!-- img\IMG_20190211_204452_6.jpg -->

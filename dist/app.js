@@ -6,9 +6,5 @@ const toggleSidebar = () => {
 
 const closeSidebar = () => {
     document.getElementById('sidebar').classList.remove('active');
-    document.getElementById('toggleline').classList.toggle('active');
-}
-
-const showHamburger = () => {
-    document.getElementById('')
+    document.getElementById('toggleline').classList.toggle('active'); 
 }
