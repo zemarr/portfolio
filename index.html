@@ -9,68 +9,42 @@
     <link rel="stylesheet" href='css/bootstrap/bootstrap.min.css'>
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/animate/animate.css">
     <link rel="stylesheet" href='css/style.css'>
     <script src="https://use.fontawesome.com/685cf8fb40.js"></script>
 
-    <title>Portfolio</title>
+    <title>Zemarr's Portfolio</title>
 </head>
 
 <body>
-    <div class="container-fluid no-mp unlocked primary-color">
+    <section class="container-fluid no-mp unlocked primary-color">
         <nav class='fixed-nav'>
             <div class='navig primary-color'>
-                <a href="#" class="logo">
+                <a href="#" class="logo animated slideInLeft delay-3s">
                     <p>zemar<span>.</span></p>
                 </a>
 
                 <ul class="navlinks">
-                    <li>
+                    <li class="animated slideInRight delay-3s">
                         <a href="#Home">Home</a>
                     </li>
-                    <li>
+                    <li class="animated slideInRight delay-3s">
                         <a href="#About">About</a>
                     </li>
-                    <li>
+                    <li class="animated slideInRight delay-3s">
                         <a href="#Services">Services</a>
                     </li>
-                    <li>
+                    <li class="animated slideInRight delay-3s">
                         <a href="#Mywork">My Work</a>
                     </li>
-                    <li>
+                    <li class="animated slideInRight delay-3s">
                         <a href="#Contact">Contact</a>
                     </li>
                 </ul>
-                <div class="toggle-btn" onclick="toggleSidebar">
-                    <i id='toggleline' class="fa fa-apple" aria-hidden='true'></i>
+                <div class="toggle-btn" onclick="toggleSidebar()">
+                    <i id='toggleline' class="fa fa-angle-double-down" aria-hidden='true'></i>
                 </div>
             </div>
-
-            <div id="sidebar">
-                <ul class="vertical-navlinks">
-                    <li>
-                        <a href="#Home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#About">About</a>
-                    </li>
-                    <li>
-                        <a href="#Services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#Mywork">My Work</a>
-                    </li>
-                    <li>
-                        <a href="#Contact">Contact</a>
-                    </li>
-                </ul>
-
-                <ul class="social-links">
-                    <li>
-                        <a href="#" target="_blank"><i class="fa fa-github gh" aria-hidden='true'></i></a>
-                    </li>
-                </ul>
-            </div>
-
         </nav>
 
         <section id='Home' class="container-fluid no-mp unlocked section-padding">
@@ -91,8 +65,12 @@
                             </ul>
                             <!-- <h1>I am Chukwudalu Ayika</h1> -->
                             <div class="about-me">
-                                <p>I'm Dalu, a noob web developer with a long time of experience in this
-                                    field</p>
+                                <p>
+                                    <!-- I'm Dalu, a noob web developer with a long time of experience in this
+                                    field -->
+                                    I'm a Frontend Developer with passion for the latest solutions and
+                                    interactive design.
+                                </p>
                             </div>
                             <ul class="link-portfolio">
                                 <li>
@@ -111,8 +89,10 @@
                     <div class="col-lg-6">
                         <div class="section-title">
                             <h2>About Me</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                standard dummy text.</p>
+                            <p>
+                               "I am always doing that which I cannot do, in order that I may learn how to do it."–
+                                Pablo Picasso
+                            </p>
                             <div class="underline secondary-color"></div>
                         </div>
                     </div>
@@ -128,8 +108,11 @@
                                 <p>In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus
                                     fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies
                                     eros, ac porta sem turpis</p>
-                                <p>nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis porta sem
-                                    turpis quis leo. Nulla in feugiat elit</p>
+                                <p>
+                                    Here's what I leant about teams - while working on a project, the first half of the
+                                    project usually takes about 95% of the total effort. Unfortunately,
+                                    the second half of the project also takes about 95% of the total effort.
+                                </p>
                             </div>
                             <div class="row contact-info">
                                 <div class="col-lg-6">
@@ -155,7 +138,7 @@
             </div>
         </section>
 
-        <section id="Services" class="container-fluid no-mp unlocked section-padding primary-color">
+        <!-- <section id="Services" class="container-fluid no-mp unlocked section-padding primary-color">
             <div class="container">
                 <div class="row justify-center">
                     <div class="col-lg-6">
@@ -185,9 +168,11 @@
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="item-service">
-                            <div class="item-service-icon"></div>
+                            <div class="item-service-icon">
+                                <i class="fa fa-code"></i>
+                            </div>
                             <div class="item-service-content">
-                                <h5>Video Editing</h5>
+                                <h5>Mockup Engineering</h5>
                                 <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy
                                 </p>
                             </div>
@@ -195,9 +180,11 @@
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="item-service">
-                            <div class="item-service-icon"></div>
+                            <div class="item-service-icon">
+                                <i class="fa fa-american-sign-language-interpreting"></i>
+                            </div>
                             <div class="item-service-content">
-                                <h5>Web-app Development</h5>
+                                <h5>Debugging</h5>
                                 <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy
                                 </p>
                             </div>
@@ -205,7 +192,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="Mywork" class="container-fluid no-mp unlocked section-padding alt-primary-color">
             <div class="container">
@@ -214,8 +201,7 @@
                         <div class="section-title">
                             <span class="section-name">MY WORK</span>
                             <h2>My Work</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                standard dummy text.</p>
+                            <p>Here are some of the works I've done</p>
                             <div class="underline secondary-color"></div>
                         </div>
                     </div>
@@ -224,22 +210,19 @@
             <div class="container">
                 <div class="row justify-center">
 
-                    <div class="col-lg-4 col-md-6">
+                    <!-- 1 -->
+                    <div class="col-lg-4 col-md-6 card-padding">
                         <div class="work-item mb-50">
                             <div class="work-thumb">
-                                <a href="#">
-                                    <img src="img\Desktop5K-3.png" alt='The first project I ever worked on'>
+                                <a href="http://bit.ly/oCuLuS-enTreEQ" target="_blank">
+                                    <img src="img\oculus.png" alt='The first project I ever worked on'>
                                 </a>
                             </div>
                             <div class="work-content primary-color">
                                 <div class="work-meta">
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <p>By <a href='index.html'>admin</a></p>
-                                        </li>
-                                    </ul>
-                                    <h3>Project title</h3>
-                                    <a href="#">Read more
+
+                                    <h3>Oculus by Facebook</h3>
+                                    <a href="http://bit.ly/oCuLuS-enTreEQ" target="_blank">View it here
                                         <i class="fa fa-arrow-circle-right"></i>
                                     </a>
                                 </div>
@@ -248,22 +231,18 @@
                     </div>
 
                     <!-- 2 -->
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 card-padding">
                         <div class="work-item mb-50">
                             <div class="work-thumb">
-                                <a href="#">
-                                    <img src="img\Desktop5K-3.png" alt='The first project I ever worked on'>
+                                <a href="#" target="_blank">
+                                    <img src="img\locfinder.png" alt='The first project I ever worked on'>
                                 </a>
                             </div>
                             <div class="work-content primary-color">
                                 <div class="work-meta">
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <p>By <a href='index.html'>admin</a></p>
-                                        </li>
-                                    </ul>
-                                    <h3>Project title</h3>
-                                    <a href="#">Read more
+
+                                    <h3>LocFinder</h3>
+                                    <a href="#" target="_blank">See it here
                                         <i class="fa fa-arrow-circle-right"></i>
                                     </a>
                                 </div>
@@ -272,22 +251,18 @@
                     </div>
 
                     <!-- 3 -->
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 card-padding">
                         <div class="work-item mb-50">
                             <div class="work-thumb">
-                                <a href="#">
-                                    <img src="img\Desktop5K-3.png" alt='The first project I ever worked on'>
+                                <a href="http://bit.ly/2TkX-0u0JG" target="_blank">
+                                    <img src="img\tictactoe.jpg" alt='The first project I ever worked on'>
                                 </a>
                             </div>
                             <div class="work-content primary-color">
                                 <div class="work-meta">
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <p>By <a href='index.html'>admin</a></p>
-                                        </li>
-                                    </ul>
-                                    <h3>Project title</h3>
-                                    <a href="#">Read more
+
+                                    <h3>Tic-Tac-Toe Game</h3>
+                                    <a href="http://bit.ly/2TkX-0u0JG" target="_blank">Play Now
                                         <i class="fa fa-arrow-circle-right"></i>
                                     </a>
                                 </div>
@@ -317,7 +292,7 @@
             <div class="container">
                 <div class="row justify-center">
                     <!-- Address Card -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 card-padding">
                         <div class="address">
                             <a href="#" class="">
                                 <i class="fa fa-map-marker"></i>
@@ -327,7 +302,7 @@
                         </div>
                     </div>
                     <!-- Call Card -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 card-padding">
                         <div class="address">
                             <a href="#" class="">
                                 <i class="fa fa-phone"></i>
@@ -337,7 +312,7 @@
                         </div>
                     </div>
                     <!-- Email Card -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 card-padding">
                         <div class="address">
                             <a href="#" class="">
                                 <i class="fa fa-envelope-o"></i>
@@ -348,11 +323,11 @@
                     </div>
 
                     <div class="col-lg-12">
-                        <form action="#" method='post'>
+                        <form action="#" method='post' data-netlify="true">
                             <div class="contactform">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <input type="text" name="your-name" aria-required="true" aria-invalid="false"
+                                        <input type="text" name="name" aria-required="true" aria-invalid="false"
                                             placeholder="Your Name">
                                     </div>
                                     <div class="col-lg-6">
@@ -361,9 +336,9 @@
                                     <div class="col-lg-12">
                                         <input type="text" name="subject" aria-required="true"
                                             placeholder="Your Subject">
-                                        <textarea name="textarea" aria-required="true"
+                                        <textarea name="message" aria-required="true"
                                             placeholder="Your Message"></textarea>
-                                        <input type="submit" class="wpcf7-form-control wpcf7-submit">
+                                        <input type="submit">
                                     </div>
                                 </div>
                             </div>
@@ -371,7 +346,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <section class="footer center-text container-fluid no-mp unlocked section-padding alt-primary-color">
@@ -417,7 +391,13 @@
             </div>
         </section>
 
-    </div>
+        <!-- COPYRIGHT -->
+        <!-- <div class="copyright-text primary-color justify-center">
+            <span> Copyright &copy; 2020 <a href="#">zemar</a> All Rights Reserved </span>
+        </div> -->
+        <!-- COPYRIGHT -->
+
+    </section>
 </body>
 
 <script src="app.js"></script>

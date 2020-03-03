@@ -1,14 +1,16 @@
+
+const navigation = document.querySelector('.navlinks');
+const toggleIcon = document.querySelector('.toggle-btn');
+
 const toggleSidebar = () => {
-    document.getElementById('sidebar').classList.toggle('active');
-    document.getElementById('toggleline').classList.toggle('active');
-    document.getElementById('toggleline').classList.toggle('hidden')
+    console.log('clicked');
+    navigation.classList.toggle('active');
+    toggleIcon.classList.toggle('active');
 }
 
-const closeSidebar = () => {
-    document.getElementById('sidebar').classList.remove('active');
-    document.getElementById('toggleline').classList.toggle('active');
-}
-
-const showHamburger = () => {
-    document.getElementById('')
+window.onkeyup = function (event) {
+    if (event.keyCode == 27) {
+        navigation.classList.remove('active');
+        toggleIcon.classList.remove('active');
+    }
 }
