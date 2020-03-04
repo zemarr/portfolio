@@ -128,15 +128,38 @@ img {
 
 /* End Customs */
 
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(359deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(359deg); }
+}
+@keyframes spin {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(359deg); }
+}
+
+.spin {    
+    animation: spin 6s infinite linear;
+    -webkit-animation: spin 6s infinite linear;
+}
 
 .logo {
     align-items: center;
+    display: flex;
 }
 
 .logo p {    
     font-size: 1.7rem;
     font-weight: 700;
     color: #ffffff;
+    margin: 0 10px 10px 10px;
+}
+
+.logo img {
+    height: 3rem;
 }
 
 .logo p span {
@@ -621,8 +644,8 @@ nav {
 
 .copyright-text a {
     color: #00deaf;
-    font-weight: 500;
-    font-size: 22.5px;
+    font-weight: 400;
+    font-size: 19px;
 }
 
 .custom-logo-link p {
