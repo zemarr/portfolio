@@ -177,7 +177,6 @@ img {
 
 .navig {
     display: flex;
-    /* position: fixed; */
     z-index: 1;
     width: 100%;
     height: 15vh;
@@ -383,10 +382,10 @@ nav {
     padding-left: 0;
 }
 
-.link-portfolio  li {
+.link-portfolio  li a {
     width: 180px;
     height: 60px;
-    padding: 1rem;
+    padding: 1rem 2rem;
     text-align: center;
     border: solid 2px #00deaf;
     border-radius: 30px;
@@ -399,14 +398,13 @@ nav {
     -o-transition: ease-in-out .3s;
 }
 
-.link-portfolio  li:hover {
+.link-portfolio  li a:hover {
     background-color: #00deaf;
-    font-size: 1.2rem;
 }
 
-.link-portfolio li a {
+/* .link-portfolio li a {
     color: white;
-}
+} */
 
 .section-title {
     text-align: center;
