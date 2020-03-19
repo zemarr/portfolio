@@ -131,17 +131,28 @@ img {
 }
 
 .icon-backg {
-    height: 100px;
+    height: 130px;
+    width: 130px;
+    background-color: white;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
 }
 
 .html5 {
+    width: 100px;
+    height: 100px;
     background-image: url(/img/iconfinderHTML.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .css3 {
+    width: 100px;
+    height: 100px;
     background-image: url(/img/iconfinderCSS.png);
     background-size: contain;
     background-position: center;
@@ -149,6 +160,8 @@ img {
 }
 
 .js {
+    width: 100px;
+    height: 100px;
     background-image: url(/img/icons8JS.png);
     background-size: contain;
     background-position: center;
@@ -156,6 +169,8 @@ img {
 }
 
 .react {
+    width: 100px;
+    height: 100px;
     background-image: url(/img/iconfinderReact.png);
     background-size: contain;
     background-position: center;
@@ -163,6 +178,8 @@ img {
 }
 
 .git {
+    width: 100px;
+    height: 100px;
     background-image: url(/img/iconfinderGit.png);
     background-size: contain;
     background-position: center;
@@ -170,6 +187,8 @@ img {
 }
 
 .bootstrap {
+    width: 100px;
+    height: 100px;
     background-image: url(/img/iconfinderBootsrap.png);
     background-size: contain;
     background-position: center;
@@ -177,6 +196,8 @@ img {
 }
 
 .sass {
+    width: 100px;
+    height: 100px;
     background-image: url(/img/iconfinderSass.png);
     background-size: contain;
     background-position: center;
