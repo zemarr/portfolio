@@ -126,6 +126,63 @@ img {
     list-style: none;
 }
 
+.padding-bottom {
+    padding-bottom: 3rem;
+}
+
+.icon-backg {
+    height: 100px;
+}
+
+.html5 {
+    background-image: url(/img/iconfinderHTML.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.css3 {
+    background-image: url(/img/iconfinderCSS.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.js {
+    background-image: url(/img/icons8JS.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.react {
+    background-image: url(/img/iconfinderReact.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.git {
+    background-image: url(/img/iconfinderGit.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bootstrap {
+    background-image: url(/img/iconfinderBootsrap.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sass {
+    background-image: url(/img/iconfinderSass.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* End Customs */
 
 @-moz-keyframes spin {
@@ -208,18 +265,6 @@ img {
     background-color: #1f2235;
     text-align: center;
 }
-/* 
-.navlinks:hidden {
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: -300px;
-        right: 0px;
-        z-index: -10;
-        background-color: #1f2235;
-        text-align: center;
-} */
 
 .vertical-navlinks {
     padding: 3rem 0 0 0;
@@ -279,7 +324,6 @@ nav {
 .fixed-nav {
     position: fixed;
     z-index: 10;
-    /* box-shadow: 0px 17px 39px -31px rgba(7,143,104,0.75); */
 }
 
 #sidebar {
@@ -290,10 +334,6 @@ nav {
     left: 100%;
     background-color: #010312;
 }
-
-/* #sidebar:active {
-    left: 0;
-} */
 
 .toggle-btn {
     text-align: center;
@@ -657,6 +697,19 @@ nav {
 .custom-logo-link p span {
     color: #00deaf;
     font-size: 4rem;
+}
+
+.successbg-image {
+    background-image: url(/img/success.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.successbg-image h3 {
+    position: relative;
+    text-align: center;
 }
 
 
