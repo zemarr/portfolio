@@ -142,10 +142,10 @@ img {
 }
 
 .html5 {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-image: url(/img/iconfinderHTML.png);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -166,6 +166,7 @@ img {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 100px;
 }
 
 .react {
@@ -175,6 +176,7 @@ img {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 100px;
 }
 
 .git {
@@ -184,6 +186,7 @@ img {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 100px;
 }
 
 .bootstrap {
@@ -193,6 +196,7 @@ img {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 100px;
 }
 
 .sass {
@@ -202,6 +206,7 @@ img {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 100px;
 }
 
 /* End Customs */
