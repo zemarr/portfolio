@@ -22,3 +22,5 @@ const printWaitMessage = () => {
     message.innerHTML = "If the download doesn't start automatically, refresh this page and try again"
     console.log("If the download doesn't start automatically, refresh this page and try again");
 }
+
+

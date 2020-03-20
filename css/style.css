@@ -112,6 +112,13 @@ img {
     justify-content: center;
 }
 
+.self-justify-center {
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
 .column {
     display: flex;
     flex-direction: column;
@@ -141,7 +148,7 @@ img {
 .icon-backg {
     height: 130px;
     width: 130px;
-    background-color: white;
+    background-color: #ffffff1a;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
@@ -221,6 +228,12 @@ img {
     font-size: .7rem;
     font-weight: 100;
     margin: 1rem;
+}
+
+.mychart {
+    background-color: transparent;
+    width: 100%;
+    border: none;
 }
 
 /* End Customs */
@@ -609,6 +622,12 @@ a#port4lio:hover {
     margin: 0;
 }
 
+.work-meta {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
 .work-meta a {
     font-size: 1rem;
     color: #00deaf;
@@ -616,6 +635,11 @@ a#port4lio:hover {
 
 .work-meta a i {
     margin-left: 0.5rem;
+}
+
+.work-meta span {
+    font-size: .8rem;
+    margin-bottom: 1rem;
 }
 
 .work-thumb a img {
