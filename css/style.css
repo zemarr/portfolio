@@ -885,10 +885,6 @@ a#port4lio:hover {
     
 }
 
-@media screen and (max-width: 320px) {
-
-}
-
 @media screen and (max-width: 425px) {
     .toggle-btn {
         right: 20px
@@ -901,6 +897,9 @@ a#port4lio:hover {
     .address p {        
         font-size: 1rem;
     }
+
+    .section-title p {
+        font-size: 0.9rem;
 }
 
 
