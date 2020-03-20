@@ -1,11 +1,13 @@
 
 const navigation = document.querySelector('.navlinks');
 const toggleIcon = document.querySelector('.toggle-btn');
+const container = document.querySelector('#contingency');
+const message = document.getElementById('contingency')
 
 const toggleSidebar = () => {
-    console.log('clicked');
     navigation.classList.toggle('active');
     toggleIcon.classList.toggle('active');
+    console.log('toggle sidebar');
 }
 
 window.onkeyup = function (event) {
@@ -15,11 +17,8 @@ window.onkeyup = function (event) {
     }
 }
 
-const submitMessage = () => {
-    document.getElementById('success').innerHTML = 'Your message has been sent'
-}
-
 const printWaitMessage = () => {
-    var container = document.querySelector('.getmyportfolio');
     container.append('Please wait.. the file you requested will begin to download shortly');
+    message.innerHTML = "If the download doesn't start automatically, refresh this page and try again"
+    console.log("If the download doesn't start automatically, refresh this page and try again");
 }

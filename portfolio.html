@@ -20,14 +20,19 @@
 </head>
 
 <body>
-    <section class="container-fluid no-mp section-padding unlocked primary-color successbg-image">
+    <section class="container-fluid no-mp section-padding unlocked primary-color">
         <div class="container">
             <div class="row justify-center">
                 <div class="col-lg-12">
                     <div class='getmyportfolio justify-center column'>
-                        <p>Click <a href="download/Chukwudalu Ayika's Resume.pdf" class="getportfolio"
-                                download="Dalu-Portolio">here</a> to download my portfolio</p>
-                            <a class="port4lio" href="/download/Chukwudalu Ayika's Resume.pdf" download='portfolio_dalu' onclick="printWaitMessage()">Download Portfolio</a>
+                        <div class="col-md-5">
+                            <div class="promoted">
+                                <img src="/img/undraw_contract_uy56.svg" alt="uncontracted" width="300px">
+                            </div>
+                        </div>
+                        <a id="port4lio" href="/download/Chukwudalu Ayika's Resume.pdf" download='portfolio_dalu'
+                            onclick="printWaitMessage()">Download Portfolio</a>
+                        <i id="contingency"></i>
                     </div>
 
                 </div>
@@ -36,4 +41,5 @@
     </section>
 </body>
 <script src="app.js"></script>
+
 </html>
