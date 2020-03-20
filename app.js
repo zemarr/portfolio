@@ -14,3 +14,12 @@ window.onkeyup = function (event) {
         toggleIcon.classList.remove('active');
     }
 }
+
+const submitMessage = () => {
+    document.getElementById('success').innerHTML = 'Your message has been sent'
+}
+
+const printWaitMessage = () => {
+    var container = document.querySelector('.getmyportfolio');
+    container.append('Please wait.. the file you requested will begin to download shortly');
+}
