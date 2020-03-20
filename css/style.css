@@ -760,9 +760,16 @@ nav {
     height: 100vh;
 }
 
-.successbg-image h3 {
-    position: relative;
-    text-align: center;
+.successbox {
+    background-color: #313552;
+    padding: 3rem;
+    border: solid 2px #00deaf3d;
+    border-radius: 5px;
+}
+
+.successbox a {
+    color: #00deaf;
+    font-size: .9rem;
 }
 
 
