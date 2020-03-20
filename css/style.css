@@ -825,6 +825,38 @@ a#port4lio:hover {
 
 /* MEDIA QUERY */
 
+@media screen and (max-width: 1024px) {
+    .html5 {
+        width: 70px;
+        height: 70px;
+    }
+    .css3 {
+        width: 80px;
+        height: 80px;
+    }
+    .js {
+        width: 70px;
+        height: 70px;
+    }
+    .react {
+        width: 70px;
+        height: 70px;
+    }
+    .bootstrap {
+        width: 80px;
+        height: 80px;
+    }
+    .sass {
+        width: 70px;
+        height: 70px;
+    }
+    .icon-backg {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .navlinks {
         display: flex;
@@ -845,6 +877,29 @@ a#port4lio:hover {
 
     .toggle-btn {
         right: 70px
+    }
+
+    .mychart {
+        margin: 0 auto 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+@media screen and (max-width: 425px) {
+    .toggle-btn {
+        right: 20px
+    }
+
+    .icon-backg {
+        margin: 1rem auto;
+    }
+
+    .address p {        
+        font-size: 1rem;
     }
 }
 
