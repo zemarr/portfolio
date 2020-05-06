@@ -252,8 +252,8 @@ img {
 }
 
 .spin {    
-    animation: spin 6s infinite linear;
-    -webkit-animation: spin 6s infinite linear;
+    animation: spin 20s infinite linear;
+    -webkit-animation: spin 20s infinite linear;
 }
 
 .logo {
