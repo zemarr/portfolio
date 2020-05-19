@@ -21,9 +21,9 @@
 </head>
 
 <body>
-    <section class="container-fluid no-mp unlocked primary-color">
+    <section class="container-fluid no-mp unlocked">
         <nav class='fixed-nav'>
-            <div class='navig primary-color'>
+            <div class='navig'>
                 <!-- <a href="#" class="logo animated slideInLeft delay-3s">
                     <img src="img/logo.svg" rel='logo' alt='logo' class='spin' />
                     <p>zemar<span>.</span></p>
@@ -43,9 +43,10 @@
                         <a href="#Contact">Contact</a>
                     </li>
                 </ul>
-                <div class="toggle-btn" onclick="toggleSidebar()">
-                    <i id='toggleline' class="fa fa-angle-double-down" aria-hidden='true'></i>
-                </div>
+                <button type='button' class="toggle-btn" onclick="toggleSidebar()">
+                    <i id="toggleline" class="fa fa-times closebtn" aria-hidden="true"></i>
+                    <i id='toggleline' class="fa fa-bars openbtn" aria-hidden='true'></i>
+                </button>
             </div>
         </nav>
 
@@ -55,11 +56,11 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-7">
                             <ul class='socialnetworks'>
-                                <li class='primary-color'><a href='http://bit.ly/GH3au4veH' target='_blank'><i
-                                            class="fa fa-github" aria-hidden='true'></i></a>
+                                <li><a href='http://bit.ly/GH3au4veH' target='_blank'><i class="fa fa-github"
+                                            aria-hidden='true'></i></a>
                                 </li>
-                                <li class='primary-color'><a href='http://bit.ly/3au4PtV' target='_blank'><i
-                                            class="fa fa-linkedin" aria-hidden='true'></i></a>
+                                <li><a href='http://bit.ly/3au4PtV' target='_blank'><i class="fa fa-linkedin"
+                                            aria-hidden='true'></i></a>
                                 </li>
                             </ul>
                             <!-- <h1>I am Chukwudalu Ayika</h1> -->
@@ -259,16 +260,18 @@
                     <div class="col-lg-4 col-md-6 card-padding">
                         <div class="work-item mb-50">
                             <div class="work-thumb">
-                                <a href="https://bit.ly/stern-emergency" target="_blank">
-                                    <img src="img\stern.png" alt="UI for a fire service">
+                                <a href="https://zemarr.github.io/Wickret-landing-page/" target="_blank">
+                                    <img src="img\wickret.png" alt='Wickret Landing Page'>
                                 </a>
                             </div>
                             <div class="work-content primary-color">
                                 <div class="work-meta">
 
-                                    <h3>Stern Fire-Emergency</h3>
+                                    <h3>Wickret</h3>
+                                    <p>Wickret is Modern online banking website I found very visually appealing. I was
+                                        driven to test myself and recreate it.</p>
                                     <span>HTML&nbsp;&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;&nbsp;JavaScript</span>
-                                    <a href="https://bit.ly/stern-emergency" target="_blank">View it here
+                                    <a href="https://zemarr.github.io/Wickret-landing-page/" target="_blank">See it here
                                         <i class="fa fa-arrow-circle-right"></i>
                                     </a>
                                 </div>
@@ -277,19 +280,21 @@
                     </div>
 
                     <!-- 2 -->
+
                     <div class="col-lg-4 col-md-6 card-padding">
                         <div class="work-item mb-50">
                             <div class="work-thumb">
-                                <a href="#" target="_blank">
-                                    <img src="img\locfinder.png" alt='The first project I ever worked on'>
+                                <a href="https://bit.ly/stern-emergency" target="_blank">
+                                    <img src="img\stern.png" alt="UI for a fire service">
                                 </a>
                             </div>
                             <div class="work-content primary-color">
                                 <div class="work-meta">
 
-                                    <h3>LocFinder</h3>
+                                    <h3>Stern Fire-Emergency</h3>
+                                    <p>I designed and developed the landing page for a Fire Emergency Service Agency</p>
                                     <span>HTML&nbsp;&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;&nbsp;JavaScript</span>
-                                    <a href="#" target="_blank">See it here
+                                    <a href="https://bit.ly/stern-emergency" target="_blank">View it here
                                         <i class="fa fa-arrow-circle-right"></i>
                                     </a>
                                 </div>
@@ -309,6 +314,8 @@
                                 <div class="work-meta">
 
                                     <h3>Tic-Tac-Toe Game</h3>
+                                    <p>A Javascript game.</p>
+                                    <p>Take turns to fill the boxes until a player wins</p>
                                     <span>HTML&nbsp;&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;&nbsp;JavaScript</span>
                                     <a href="http://bit.ly/2TkX-0u0JG" target="_blank">Play Now
                                         <i class="fa fa-arrow-circle-right"></i>

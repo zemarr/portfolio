@@ -11,8 +11,8 @@ body {
     font-size: 18px;
     font-weight: 300;
     letter-spacing: -0px;
-    background-color: #1F2235;
-    color: white;
+    background-color: white;
+    /* color: black; */
 }
 
 h1 {
@@ -52,14 +52,12 @@ img {
     position: relative;
 }
 
-.dark {
-    background-color: #010312d8;
-    overflow: hidden;
+.dark-text {
+    color: #1F2235;
 }
 
-.light {
-    background-color: white;
-    overflow: hidden;
+.light-text {
+    color: white;
 }
 
 .no-mp {
@@ -79,11 +77,11 @@ img {
 }
 
 .primary-color {
-    background-color: #1F2235;
+    background-color: white;
 }
 
 .alt-primary-color {
-    background-color: #23263a;
+    background-color: #e0e0e0;
 }
 
 .secondary-color {
@@ -298,25 +296,25 @@ img {
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     list-style: none;
-    flex-wrap: wrap;
     align-items: center;
-    transition: ease-in .2s;
-    -webkit-transition: ease-in .2s;
-    -moz-transition: ease-in .2s;
-    -ms-transition: ease-in .2s;
-    -o-transition: ease-in .2s;
+    transition: cubic-bezier(0, 1.35, 0.58, 1) .2s;
+    -webkit-transition: cubic-bezier(0, 1.35, 0.58, 1) .2s;
 }
 
 .navlinks.active {
-    flex-direction: column;
-    width: 100%;
-    height: 90vh;
+    display: flex;
     position: absolute;
-    top: 70px;
-    right: 0px;
-    background-color: #1f2235;
-    text-align: center;
+    top: 0px;
+    opacity: 1;
+    transition:cubic-bezier(0, 1.12, 1, 0.99) .2s;
+    -webkit-transition:cubic-bezier(0, 1.12, 1, 0.99) .2s;
+    -moz-transition:cubic-bezier(0, 1.12, 1, 0.99) .2s;
+    -ms-transition:cubic-bezier(0, 1.12, 1, 0.99) .2s;
+    -o-transition:cubic-bezier(0, 1.12, 1, 0.99) .2s;
 }
 
 .vertical-navlinks {
@@ -349,7 +347,7 @@ img {
 .navlinks li a {
     margin: 0 1rem;
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.1rem;
     font-weight: 300;
     transition: ease-in .2s;
@@ -367,7 +365,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #1F2235;
+    background-color: white;
     width: 100%;
     height: 15vh;
     padding: 0 2rem;
@@ -377,6 +375,7 @@ nav {
 .fixed-nav {
     position: fixed;
     z-index: 10;
+    border-bottom: solid .5px #f1f1f1;
 }
 
 #sidebar {
@@ -390,17 +389,30 @@ nav {
 
 .toggle-btn {
     text-align: center;
-    font-size: 1.8rem;
-    color: #ffffff;
+    color: black;
     position: absolute;
+    top: 30px;
     right: -100px;
     display: inline-block;
-    width: 30px;
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: transparent;
+    z-index: 100;
     transition: ease-in .2s;
     -webkit-transition: ease-in .2s;
     -moz-transition: ease-in .2s;
     -ms-transition: ease-in .2s;
     -o-transition: ease-in .2s;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.toggle-btn:focus {
+    outline: none;
 }
 
 .toggle-btn.active {
@@ -409,6 +421,10 @@ nav {
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
+}
+
+.closebtn {
+    color: white;
 }
 
 .social-links {
@@ -432,12 +448,12 @@ nav {
     margin: 9rem 0 1.5rem;
     display: flex;
     font-size: 1.5rem;
-    color: white;
     padding-left: 0;
 }
 
 .socialnetworks li {
     border: solid 2px #00deaf;
+    background-color: #00deaf;
     width: 50px;
     height: 50px;
     display: flex;
@@ -462,7 +478,6 @@ nav {
 }
 
 .about-me {
-    color: white;
     font-size: 1.5rem;
     font-weight: 200;
 }
@@ -475,13 +490,14 @@ nav {
     padding-left: 0;
 }
 
-.link-portfolio  li a {
+.link-portfolio li a {
     width: 180px;
     height: 60px;
     padding: 1rem 2rem;
     text-align: center;
     border: solid 2px #00deaf;
     border-radius: 30px;
+    background-color: #00deaf;
     color: white;
     font-weight: 300;
     transition: ease-in-out .3s;
@@ -491,7 +507,7 @@ nav {
     -o-transition: ease-in-out .3s;
 }
 
-.link-portfolio  li a:hover {
+.link-portfolio li a:hover {
     background-color: #00deaf;
 }
 
@@ -598,11 +614,13 @@ a#port4lio:hover {
 
 /* CUSTOM CARD */
 .work-item {
+    background-color: white;
     position: relative;
-    background: #23263a;
     border-radius: 10px;
     overflow: hidden;
     margin: 1rem;
+    height: 450px;
+    box-shadow: 0px 0px 23px -13px rgba(0,0,0,0.75);
 }
 
 .work-content {
@@ -639,7 +657,14 @@ a#port4lio:hover {
 
 .work-meta span {
     font-size: .8rem;
+    font-weight: 500;
+    color: lightslategray;
     margin-bottom: 1rem;
+}
+
+.work-meta p {
+    font-size: .9rem;
+    font-weight: 400;
 }
 
 .work-thumb a img {
@@ -666,7 +691,7 @@ a#port4lio:hover {
     padding: 25px;
     padding-left: 20px;
     border-radius: 6px;
-    background: #23263a;
+    background: #e0e0e0;
 }
 
 .address span {
@@ -674,14 +699,15 @@ a#port4lio:hover {
     position: relative;
     font-size: 16px;
     top: -10px;
-    color: #fff;
+    color: black;
     left: 10px;
 }
 
 .address p {
     margin-bottom: 0;
-    color: #fff;
-    margin-left: 45px;
+    color: black;
+    margin-left: 33px;
+    font-size: 1rem;
 }
 
 .address i {
@@ -696,7 +722,7 @@ a#port4lio:hover {
 .contactform input[type=text], .contactform input[type=email] {
     border: none;
     width: 100%;
-    background: #23263a;
+    background: #e0e0e0;
     color: #fff;
     padding: 20px 35px;
     margin-bottom: 20px;
@@ -705,8 +731,7 @@ a#port4lio:hover {
 
 .contactform textarea {
     border: none;
-    background: #23263a;
-    color: #fff;
+    background: #e0e0e0;
     width: 100%;
     padding: 30px 35px;
     margin-bottom: 20px;
@@ -741,15 +766,14 @@ a#port4lio:hover {
 }
 
 .footer-social {
-    margin-top: 50px;
-    margin-bottom: 70px;
+    margin: 50px 0;
 }
 
 .footer-social li a {
     width: 60px;
     height: 60px;
     color: #fff;
-    background: #1F2235;
+    background: #00deaf;
     text-align: center;
     padding: 13px;
     border-radius: 50%;
@@ -859,20 +883,37 @@ a#port4lio:hover {
 
 @media screen and (max-width: 768px) {
     .navlinks {
-        display: flex;
+        display: none;
+        flex-direction: column;
         justify-content: center;
-        right: 0;
-        left: 0;
         list-style: none;
         align-items: center;
         position: absolute;
-        top: -300px;
-    }
+        top: -100vh;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        opacity: 0;
+}
 
     .navlinks li {
         width: 400px;
         padding: 15px;
         text-align: center;
+        color: white;
+        border-bottom: solid 0.1px #060606;
+    }
+
+    .navlinks li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 300;
+        transition: ease-in .2s;
+        -webkit-transition: ease-in .2s;
+        -moz-transition: ease-in .2s;
+        -ms-transition: ease-in .2s;
+        -o-transition: ease-in .2s;
     }
 
     .toggle-btn {
@@ -881,6 +922,11 @@ a#port4lio:hover {
 
     .mychart {
         margin: 0 auto 3rem;
+    }
+
+    .address p {        
+        font-size: 1rem;
+        margin-left: 45px;
     }
     
 }
@@ -896,6 +942,7 @@ a#port4lio:hover {
 
     .address p {        
         font-size: 1rem;
+        margin-left: 45px;
     }
 
     .section-title p {

@@ -1,13 +1,15 @@
 
 const navigation = document.querySelector('.navlinks');
-const toggleIcon = document.querySelector('.toggle-btn');
+const close = document.querySelector('.closebtn');
+const open = document.querySelector('.openbtn');
 const container = document.querySelector('#contingency');
-const message = document.getElementById('contingency')
+const message = document.getElementById('contingency');
+let hamburger = document.querySelector(".fa-bars");
+
 
 const toggleSidebar = () => {
     navigation.classList.toggle('active');
-    toggleIcon.classList.toggle('active');
-    console.log('toggle sidebar');
+    console.log(hamburger.classList[1]);
 }
 
 window.onkeyup = function (event) {
