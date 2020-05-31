@@ -20,7 +20,7 @@
     <title>Chukwudalu</title>
 </head>
 
-<body>
+<body onscroll="navShadow()">
     <section class="container-fluid no-mp unlocked">
         <nav class='fixed-nav'>
             <div class='navig'>
@@ -29,7 +29,7 @@
                     <p>zemar<span>.</span></p>
                 </a> -->
 
-                <ul class="navlinks">
+                <ul class="navlinks" onclick="closeDropdown()">
                     <li>
                         <a href="#Home">Home</a>
                     </li>
@@ -446,6 +446,7 @@
 </body>
 
 <script src="app.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="Chart.min.js"></script>
 <script type="text/javascript">
     // chart colors
