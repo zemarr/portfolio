@@ -755,7 +755,7 @@ a#port4lio:hover {
     border: none;
     width: 100%;
     background: #e0e0e0;
-    color: #fff;
+    color: black;
     padding: 20px 35px;
     margin-bottom: 20px;
     border-radius: 6px;
@@ -773,6 +773,7 @@ a#port4lio:hover {
 }
 
 .contactform input[type=submit] {
+    outline: none;
     height: 60px;
     width: 200px;
     cursor: pointer;
@@ -864,9 +865,12 @@ a#port4lio:hover {
 }
 
 .successbox {
-    background-color: #313552;
-    padding: 3rem;
-    border: solid 2px #00deaf3d;
+    background-image: url(../img/battle-black-board-game-chess-411207.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
     border-radius: 5px;
 }
 
@@ -874,7 +878,6 @@ a#port4lio:hover {
     color: #00deaf;
     font-size: .9rem;
 }
-
 
 
 /* FOOTER */
