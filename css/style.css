@@ -874,9 +874,17 @@ a#port4lio:hover {
     border-radius: 5px;
 }
 
+.successbox p {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
 .successbox a {
-    color: #00deaf;
+    color: white;
     font-size: .9rem;
+    background-color: #00deaf;
+    padding: 1rem;
 }
 
 
