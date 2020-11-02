@@ -40,7 +40,8 @@ body.onscroll = function () { navShadow() };
 function navShadow() {
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
-        $('.fixed-nav').css('box-shadow', '0px 2px 15px -5px rgba(0,0,0,0.75)');
+        $('.fixed-nav').css('box-shadow', '24px -30px 43px -6px rgba(0,0,0,0.75)');
+        // rgba(0, 0, 0, 0.75) 24px -30px 43px -6px
     } else {
         $('.fixed-nav').css('box-shadow', 'none');
     }
