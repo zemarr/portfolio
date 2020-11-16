@@ -966,6 +966,10 @@ a#port4lio:hover {
         display: none;
     }
 
+    .profile-image {
+        display: none;
+    }
+
     .navlinks {
         display: none;
         flex-direction: column;
