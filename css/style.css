@@ -1024,6 +1024,10 @@ a#port4lio:hover {
         right: 20px
     }
 
+    .about-me {
+        width: 90%;
+    }
+
     .icon-backg {
         margin: 1rem auto;
     }
