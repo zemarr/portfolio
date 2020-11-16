@@ -963,7 +963,9 @@ a#port4lio:hover {
 
 @media screen and (max-width: 768px) {
     .logo {
-        display: none;
+        position: relative;
+        left: -300px;
+        top: 8px;
     }
 
     .profile-image {
@@ -1028,6 +1030,12 @@ a#port4lio:hover {
         width: 90%;
     }
 
+    .logo {
+        position: relative;
+        left: -160px;
+        top: 8px;
+    }
+
     .icon-backg {
         margin: 1rem auto;
     }
@@ -1041,6 +1049,19 @@ a#port4lio:hover {
         font-size: 0.9rem;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .logo {
+        left: -135px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logo {
+        left: -110px;
+    }
+}
+
 
 
 /* MEDIA QUERY */
