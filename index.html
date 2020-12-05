@@ -58,11 +58,11 @@
                     <div class="row">
                         <div class="col-lg-7">
                             <ul class='socialnetworks'>
-                                <li class="linked-in"><a href='http://bit.ly/3au4PtV' target='_blank'><i class="fa fa-linkedin"
-                                            aria-hidden='true'></i></a>
+                                <li class="linked-in"><a href='http://bit.ly/3au4PtV' target='_blank'><i
+                                            class="fa fa-linkedin" aria-hidden='true'></i></a>
                                 </li>
-                                <li class="github"><a href='http://bit.ly/GH3au4veH' target='_blank'><i class="fa fa-github"
-                                            aria-hidden='true'></i></a>
+                                <li class="github"><a href='http://bit.ly/GH3au4veH' target='_blank'><i
+                                            class="fa fa-github" aria-hidden='true'></i></a>
                                 </li>
                             </ul>
                             <!-- <h1>I am Chukwudalu Ayika</h1> -->
@@ -74,7 +74,8 @@
                             </div>
                             <ul class="link-portfolio">
                                 <li>
-                                    <a href="https://docs.google.com/document/d/1Oe1-qUtZzZ7JXcgRG6qec1lUfHYSNolXZC2zc_LJ6l4/edit?usp=sharing" download='dalu_resume'>Resume &nbsp; 
+                                    <a href="https://docs.google.com/document/d/1Oe1-qUtZzZ7JXcgRG6qec1lUfHYSNolXZC2zc_LJ6l4/edit?usp=sharing"
+                                        download='dalu_resume'>Resume &nbsp;
                                         <i class="fa fa-download"></i> </a>
                                 </li>
                             </ul>
@@ -289,15 +290,18 @@
                     <div class="col-lg-4 col-md-6 card-padding">
                         <div class="work-item mb-50">
                             <div class="work-thumb">
-                                <a href="https://bit.ly/stern-emergency" target="_blank">
-                                    <img src="img\stern.png" alt="UI for a fire service">
+                                <a href="https://busvest.co" target="_blank">
+                                    <img src="img/busvest.png" alt="UI for BusVest">
                                 </a>
                             </div>
                             <div class="work-content primary-color">
                                 <div class="work-meta">
 
-                                    <h3>Stern Fire-Emergency</h3>
-                                    <p>I designed and developed the landing page for a Fire Emergency Service Agency</p>
+                                    <h3>BusVest</h3>
+                                    <p>BusVest is an innovative digital platform that gives everyone the opportunity to
+                                        generate revenue from public transportation anytime and anywhere by funding
+                                        buses.
+                                    </p>
                                     <span>HTML&nbsp;&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;&nbsp;JavaScript</span>
                                     <a href="https://bit.ly/stern-emergency" target="_blank">View it here
                                         <i class="fa fa-arrow-circle-right"></i>
@@ -467,20 +471,26 @@
     /* 3 donut charts */
     var donutOptions = {
         cutoutPercentage: 65,
-        legend: { position: 'right', padding: 0, borderWidth: 0, labels: { pointStyle: 'circle', usePointStyle: true } }
+        legend: {
+            position: 'right',
+            padding: 0,
+            borderWidth: 0,
+            labels: {
+                pointStyle: 'circle',
+                usePointStyle: true
+            }
+        }
     };
 
     // donut 1
     var chDonutData1 = {
         labels: ['HTML - 85%', 'CSS - 70%', 'JavaScript - 65%', 'Bootstrap - 70%', 'React - 50%', 'Sass - 60%'],
-        datasets: [
-            {
-                backgroundColor: colors.slice(0, 6),
-                borderWidth: 0,
-                padding: 100,
-                data: [85, 70, 65, 70, 50, 60]
-            }
-        ]
+        datasets: [{
+            backgroundColor: colors.slice(0, 6),
+            borderWidth: 0,
+            padding: 100,
+            data: [85, 70, 65, 70, 50, 60]
+        }]
     };
 
     var chDonut1 = document.getElementById("chDonut1");
